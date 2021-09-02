@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    background: url('./images/pattern-background-desktop.svg') no-repeat ;
+    width: 1440px;
+    display: flex;
+    min-height:100vh ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+
+    
+}
+.order_card{
+    background:   #fff;
+    min-height: 600px;
+    max-width: 450px;
+    margin-top: 60px;
+    box-shadow: 2px 4px 10px rgba(0,0,0,.7);
+    border-radius: 15px !important;
+   
+    
+    
+
+}
+.imgbox {
+    width: 100%;
+    
+}
+.imgbox img{
+    width: 100%;
+    border-radius:15px 15px 0 0 ;
+}
+
+.content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.content h2{
+    text-align: center;
+    margin: 25px 0;
+    color:hsl(223, 47%, 23%);
+    font-family: "Red Hat Display",sans-serif ;
+    font-weight: 900;
+}
+.content p{
+    text-align: center;
+    padding: 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-family: 'Red Hat Display';
+    color: hsl(224, 23%, 55%);
+}
+
+.plan{
+    padding: 0 30px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.plan li {
+
+    list-style: none;
+    font-family: "Red Hat Display";
+    color: hsl(224, 23%, 55%);
+
+
+    
+}
+.plan li.bold{
+    font-weight: 700;
+    color:hsl(223, 47%, 23%);
+}
+.plan a{
+     font-family: 'Red Hat Display';
+     color:  hsl(245, 75%, 52%);
+}
+.plan a:hover{
+    opacity: .8;
+}
+button{
+    display: block;
+    border: none;
+    font-size: 16px;
+    font-family:"Red Hat Display";
+    text-align: center;
+    margin:10px auto;
+    cursor: pointer;
+   
+}
+.btn{
+    width: 100%;
+    padding: 12px 24px;
+    background: hsl(245, 75%, 52%);
+    color:  hsl(225, 100%, 98%);
+    border-radius: 10px;
+    
+}
+.btn:hover{
+    background:hsla(245, 75%, 52%, 0.658) ;
+}
+.btn2{
+    opacity: .7;
+}
+.btn2:hover{
+    opacity: 1;
+}
+
+
+.attribution{
+    font-family: "Red Hat Display";
+    margin: 20px 0;
+}
+
+
+
+/* Media querry in moblies */
+
+
+@media screen and (max-width:375px) {
+    .container{
+        background:url('images/pattern-background-mobile.svg') no-repeat / cover !important;
+        max-width: 100%;
+    }
+    .order_card{
+        max-width: 90%;
+    }
+    .content p{
+        padding: 0;
+    }
+
+    .plan{
+        padding: 0 10px;
+    }
+    .attribution{
+        max-width: 90%;
+    }
+    .attribution a{
+        display: inline-block;
+        text-align: center;
+    }
+}
